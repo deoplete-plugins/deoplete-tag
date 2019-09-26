@@ -5,6 +5,6 @@ deoplete source for tag
 
 It collects keywords from ctags files.
 
-Note: It only supports UTF-8 encoded tag file.
+Note: It only supports UTF-8 encoded and sorted tag file.
 
 rank: 100

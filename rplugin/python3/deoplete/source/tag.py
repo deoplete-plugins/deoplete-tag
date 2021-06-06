@@ -24,8 +24,8 @@ class Source(Base):
     def gather_candidates(self, context):
         candidates = []
 
-        case = context['smartcase'] or context['camelcase']
-        ignorecase = context['ignorecase']
+        case = self.smart_case or self.camel_case
+        ignorecase = self.ignore_case
         if case and re.search(r'[A-Z]', context['complete_str']):
             ignorecase = True
         if ignorecase:
